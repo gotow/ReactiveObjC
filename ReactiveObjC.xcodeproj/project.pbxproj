@@ -13,10 +13,8 @@
 		3A17B4A71E8EFDD800C8999E /* RACAnnotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A17B4A51E8EFDCD00C8999E /* RACAnnotations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A17B4A81E8EFDDA00C8999E /* RACAnnotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A17B4A51E8EFDCD00C8999E /* RACAnnotations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A17B4A91E8EFDDF00C8999E /* RACAnnotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A17B4A51E8EFDCD00C8999E /* RACAnnotations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AC5B3B221D405B8005920AA /* RACSwiftBridgingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B121D405B8005920AA /* RACSwiftBridgingSpec.swift */; };
 		4AC5B3B321D405B8005920AA /* RACSwiftBridgingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B121D405B8005920AA /* RACSwiftBridgingSpec.swift */; };
 		4AC5B3B421D405B8005920AA /* RACSwiftBridgingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B121D405B8005920AA /* RACSwiftBridgingSpec.swift */; };
-		4AC5B3B621D40E75005920AA /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B521D40E75005920AA /* Deprecations+Removals.swift */; };
 		4AC5B3B721D40E75005920AA /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B521D40E75005920AA /* Deprecations+Removals.swift */; };
 		4AC5B3B821D40E75005920AA /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B521D40E75005920AA /* Deprecations+Removals.swift */; };
 		4AC5B3B921D40E75005920AA /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B3B521D40E75005920AA /* Deprecations+Removals.swift */; };
@@ -1985,10 +1983,9 @@
 			};
 			buildConfigurationList = D04725E419E49ED7006002AA /* Build configuration list for PBXProject "ReactiveObjC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = D04725E019E49ED7006002AA;
@@ -2355,7 +2352,6 @@
 				D037658C19EDA41200A782A9 /* RACEvent.m in Sources */,
 				D03765B219EDA41200A782A9 /* RACQueueScheduler.m in Sources */,
 				D037652A19EDA41200A782A9 /* NSObject+RACSelectorSignal.m in Sources */,
-				4AC5B3B621D40E75005920AA /* Deprecations+Removals.swift in Sources */,
 				D03765AE19EDA41200A782A9 /* RACPassthroughSubscriber.m in Sources */,
 				D03765BC19EDA41200A782A9 /* RACReturnSignal.m in Sources */,
 			);
@@ -2402,7 +2398,6 @@
 				D03766DF19EDA60000A782A9 /* RACCompoundDisposableSpec.m in Sources */,
 				D03766E519EDA60000A782A9 /* RACDisposableSpec.m in Sources */,
 				D0C3132019EF2D9700984962 /* RACTestObject.m in Sources */,
-				4AC5B3B221D405B8005920AA /* RACSwiftBridgingSpec.swift in Sources */,
 				D03766D319EDA60000A782A9 /* NSUserDefaultsRACSupportSpec.m in Sources */,
 				D03766C119EDA60000A782A9 /* NSObjectRACAppKitBindingsSpec.m in Sources */,
 				D03766DB19EDA60000A782A9 /* RACChannelSpec.m in Sources */,
@@ -2825,6 +2820,7 @@
 				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactivecocoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -2899,7 +2895,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -2917,7 +2912,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -3000,6 +2994,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactivecocoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -3033,7 +3028,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -3117,7 +3111,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
